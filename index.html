@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Password</title>
+  </head>
+  <form>
+    <input type="text" placeholder="Try to guess the password." id="guess" />
+    <p id="correct">Correct</p>
+    <script>
+      var password = document.getElementById("guess");
+      var correct = document.getElementById("correct");
+      var l423 = "a";
+      var l152 = "b"
+      var l079 = "c"
+      var l524 = "d"
+      var l612 = "e"
+      var l998 = "f"
+      var l464 = "g"
+      var l411 = "h"
+      var l427 = "i"
+      var l613 = "j"
+      var l067 = "k"
+      var l091 = "l"
+      var l271 = "m"
+      var l712 = "n"
+      var l333 = "o"
+      var l002 = "p"
+      var l821 = "q"
+      var l990 = "r"
+      var l212 = "s"
+      var l435 = "t"
+      var l786 = "u"
+      var l010 = "v"
+      var l102 = "w"
+      var l556 = "x"
+      var l547 = "y"
+      var l977 = "z"
+      var l111 = " "
+      passCode = l271+l423+l079+l111+l427+l212+l111+l152+l612+l435+l435+l612+l990;
+      document.addEventListener("keypress", function (event) {
+        if (event.keyCode === 13) {
+          if (password.value === passCode) {
+            correct.style.display = "block";
+          } else {
+            password.value = "";
+          }
+        }
+      });
+    </script>
+    <style>
+      #correct {
+        display: none;
+      }
+    </style>
+  </form>
+</html>
